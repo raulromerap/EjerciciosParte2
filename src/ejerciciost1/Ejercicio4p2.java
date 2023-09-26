@@ -19,7 +19,7 @@ public class Ejercicio4p2 {
 		System.out.print("¿Tienes que ir a la biblioteca?");
 		biblioteca = sc.next();
 				
-		String mensaje = (lluvia == deberes) ? "Si puedes salir" : "No puedes salir";
+		String mensaje = ((!lluvia) == deberes) ? "Si puedes salir" : "No puedes salir";
 		System.out.println(mensaje);
 	}
 }
