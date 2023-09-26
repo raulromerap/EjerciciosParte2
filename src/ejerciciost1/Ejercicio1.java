@@ -3,32 +3,22 @@ import java.util.Scanner;
 
 public class Ejercicio1 {
 	public static void main(String[] args) {
-		
-		//Variables
+		//Creación de Scanner
 		Scanner sc = new Scanner(System.in);
-		double num1;
-		double num2;
-		double suma;
-		double resta;
-		double mult;
-		double div;
 		
-		//Instrucciones
-		System.out.print("Introduzca el primer número: ");
-		num1 = sc.nextDouble();
-		System.out.print("Introduzca el segundo número: ");
-		num2 = sc.nextDouble();
+		//Solicitud de edad del usuario
+		System.out.print("Introduzca su edad: ");
 		
-		suma = num1 + num2;
-		resta = num1 - num2;
-		mult = num1 * num2;
-		div = num1 / num2;
+		//Lectura de la edad
+		int edad = sc.nextInt();
 		
-		System.out.println("La suma del número es: " + suma);
-		System.out.println("La resta del numero es: " + resta);
-		System.out.println("La multiplicación del número es: " + mult);
-		System.out.println("La división del número es: "+ div);
+		//Calculo de la edad del próximo año
+		int edadAñoProx = edad + 1;
 		
+		//Muestra de la edad del próximo año
+		System.out.println("El año que viene tendrá: " + edadAñoProx);
+		
+		//Cierre de scanner
 		sc.close();
 	}
 }
