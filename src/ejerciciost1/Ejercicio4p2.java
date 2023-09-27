@@ -7,19 +7,24 @@ public class Ejercicio4p2 {
 		
 		//Variables
 		Scanner sc = new Scanner(System.in);
-		String lluvia;
-		String deberes;
-		String biblioteca;
-		
+		boolean lluvia;
+		boolean deberes;
+		boolean biblioteca;
+
 		//Instrucciones
 		System.out.print("¿Está lloviendo? \n- ");
-		lluvia = sc.next();
+		lluvia = sc.nextBoolean();
 		System.out.print("¿Has hecho los deberes? \n- ");
-		deberes = sc.next();
-		System.out.print("¿Tienes que ir a la biblioteca?");
-		biblioteca = sc.next();
-				
-		String mensaje = ((!lluvia) == deberes) ? "Si puedes salir" : "No puedes salir";
+		deberes = sc.nextBoolean();
+		System.out.print("¿Tienes que ir a la biblioteca? \n-");
+		biblioteca = sc.nextBoolean();
+		
+		//Ternario para saber si puede salir
+		String mensaje = biblioteca || (!lluvia&&deberes) ? "Si puedes salir" : "No puedes salir";
+		//Impresion en pantalla del mensaje
 		System.out.println(mensaje);
+		
+		//Cierre de Scanner
+		sc.close();
 	}
 }
