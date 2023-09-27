@@ -1,9 +1,10 @@
 package ejerciciost1;
+
 import java.util.Scanner;
 
 public class Ejercicio5p2 {
 
-	public static void maid(String[] args) {
+	public static void main(String[] args) {
 		
 		//Variables
 		int nota1, nota2, nota3;
@@ -26,6 +27,5 @@ public class Ejercicio5p2 {
 		System.out.println("La nota del expediente es: " + notaMediaEx);
 		
 		sc.close();
-		
 	}
 }
