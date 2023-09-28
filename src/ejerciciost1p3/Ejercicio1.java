@@ -18,7 +18,9 @@ public class Ejercicio1 {
 		int numeroTotal = (int) numeroDeci;
 		//Redondeo del numero
 		String resultado = (numeroTotal - numeroDeci >= .5) ? "El resultado es: " + ++numeroTotal : "El resultado es: " + numeroTotal;
+		//Mensaje del resultado
 		System.out.println(resultado);
+		//Cierre del Scanner
 		sc.close();
 	}
 }
